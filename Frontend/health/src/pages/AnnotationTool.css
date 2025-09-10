@@ -1,0 +1,63 @@
+.canvas-container {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  max-height: 70vh;
+}
+
+.canvas-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.annotation-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Scrollbar styling for canvas container */
+.canvas-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.canvas-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.canvas-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.canvas-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .annotation-container {
+    padding: 10px;
+  }
+  
+  .canvas-container {
+    max-height: 50vh;
+  }
+}
